@@ -8,10 +8,9 @@ export default function WelcomeScreen() {
 	return (
 		<>
 			<View className="flex-1 justify-center items-center space-y-10 bg-amber-500">
-				<Text>Hello world</Text>
+				<Text className="font-pblack text-3xl">Hello world</Text>
 				<StatusBar style="light" />
 				<Link href="/home" className="text-blue-500">go to Home</Link>
-
 			</View>
 		</>
 	)
