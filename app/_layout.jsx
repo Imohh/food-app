@@ -1,12 +1,13 @@
 import { useEffect } from 'react'
 import { useFonts } from 'expo-font';
-import { SplashScreen } from 'expo-router'
+import { SplashScreen, Stack } from 'expo-router'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
-import home from './home'
 import WelcomeScreen from './WelcomeScreen'
 
 SplashScreen.preventAutoHideAsync();
-const Stack = createNativeStackNavigator();
+// const Stack = createNativeStackNavigator();
+
+
 
 export default function RootLayout() {
   const [fontsLoaded, error] = useFonts({
@@ -30,11 +31,13 @@ export default function RootLayout() {
   if(!fontsLoaded && !error) return null;
 
   return (
-    
-      <Stack.Navigator initialRouteName="WelcomeScreen" screenOptions={{headerShown: false}}>
-        <Stack.Screen name="home" component={home} />
-        <Stack.Screen name="WelcomeScreen" component={WelcomeScreen} />
-      </Stack.Navigator>
+      // <Stack.Navigator initialRouteName="WelcomeScreen" screenOptions={{headerShown: false}}>
+      //   <Stack.Screen name="WelcomeScreen" component={WelcomeScreen} />
+      // </Stack.Navigator>
+
+      <Stack>
+        <Stack.Screen name="index" options={{ headerShown: false }} />
+      </Stack>
 
   );
 }

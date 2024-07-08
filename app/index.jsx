@@ -4,13 +4,13 @@ import { StatusBar } from 'expo-status-bar'
 import { Link } from 'expo-router'
 
 
-export default function WelcomeScreen() {
+export default function App() {
 	return (
 		<>
 			<View className="flex-1 justify-center items-center space-y-10 bg-amber-500">
 				<Text className="font-pblack text-3xl">Hello world</Text>
 				<StatusBar style="light" />
-				<Link href="/tabs/home" className="text-blue-500">go to Home</Link>
+				<Link href="/home" className="text-blue-500">go to Home</Link>
 			</View>
 		</>
 	)
