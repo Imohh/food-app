@@ -5,9 +5,6 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import WelcomeScreen from './WelcomeScreen'
 
 SplashScreen.preventAutoHideAsync();
-// const Stack = createNativeStackNavigator();
-
-
 
 export default function RootLayout() {
   const [fontsLoaded, error] = useFonts({
