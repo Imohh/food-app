@@ -20,7 +20,7 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.imoh88.food"
+      "package": "com.jsm.food"
     },
     "web": {
       "bundler": "metro",
